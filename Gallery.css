@@ -1,0 +1,233 @@
+/* =====================================
+   GALLERY
+===================================== */
+/* =====================================
+   NAVIGATION
+===================================== */
+
+.nav-container {
+	
+ border-bottom: 1px solid #eee;
+    position: fixed;
+    top: 0;
+    z-index:1000;
+	width:100%;
+	background-color: #fdfbf7;
+    background-image: radial-gradient(#d4af37 0.75px, transparent 0.75px), radial-gradient(#d4af37 0.75px, #fdfbf7 0.75px);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a.active{
+	color:white; background:black;
+	padding:10px 15px;
+	border-radius:16px
+}
+a.active{
+	color:black; background:brown;
+}
+
+.nav-content {
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px; 
+    box-sizing: border-box;
+}
+
+
+.logo {
+    color: var(--brown);
+    text-align: left;
+    line-height: 1;
+	justify-content:flex-start;
+	margin-left: 10px;
+}
+
+.logo span {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo small {
+    font-size: 8px;
+    letter-spacing: 3px;
+    color: var(--gold);
+}
+
+.desktop-menu {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.desktop-menu a {
+    color: #333;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.desktop-menu a:hover {
+    color: #FFD54F;
+	 background-color:#212121;
+	 padding:8px 8px;
+	 border-radius:30px;
+	 
+}
+
+
+
+
+
+.gallery-section {
+    padding: 100px 0;
+    background-color: #fdfbf7;
+    background-image: radial-gradient(#d4af37 0.75px, transparent 0.75px), radial-gradient(#d4af37 0.75px, #fdfbf7 0.75px);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    transition: .4s;
+	border-radius:20px;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.03);
+    filter: brightness(.8);
+	border-radius: 50px;
+}
+/* ==================== CAFE CONTACT SECTION STYLES ==================== */
+.cafe-contact-section {
+    padding: 70px 20px;
+    background-color: #fdfbf7;
+    font-family: 'Poppins', sans-serif;
+    border-top: 1px solid #eee;
+}
+
+.cafe-contact-section .section-label {
+    letter-spacing: 2px;
+    color: #777;
+    font-size: 13px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.cafe-contact-section .center-heading {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    margin-bottom: 45px;
+    color: #222;
+}
+
+.cafe-contact-section .center-heading span {
+    color: var(--brown, #8B4513);
+}
+
+.contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.cafe-info-card, .cafe-form {
+    flex: 1;
+    min-width: 300px;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 10px;
+    border: 1px solid #e8e4dc;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.04);
+}
+
+.cafe-info-card h3, .cafe-form h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #222;
+    border-bottom: 2px solid #f3efe6;
+    padding-bottom: 10px;
+}
+
+.cafe-info-card p {
+    margin-bottom: 14px;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.hours-box {
+    margin-top: 20px;
+    background: #fdfbf7;
+    padding: 12px 15px;
+    border-left: 3px solid #8B4513;
+    border-radius: 4px;
+}
+
+.cafe-form input, 
+.cafe-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 14px;
+    border: 1px solid #dcd6cd;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    background: #faf8f5;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+.cafe-form input:focus, 
+.cafe-form textarea:focus {
+    outline: none;
+    border-color: #8B4513;
+    background: #fff;
+}
+
+.cafe-submit-btn {
+    width: 100%;
+    background-color: #111;
+    color: #fff;
+    padding: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    transition: background 0.3s ease;
+}
+
+.cafe-submit-btn:hover {
+    background-color: #8B4513;
+}
